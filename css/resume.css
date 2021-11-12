@@ -1,0 +1,130 @@
+/* heading */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 3px rgb(136, 133, 133) solid;
+  line-height: 2;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+}
+
+.staff-info h3 {
+  font-size: 1rem;
+}
+
+.contact-info h3 {
+  font-size: 1rem;
+}
+
+/* grid of experience, education, others */
+.pc-col2-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 3px rgb(136, 133, 133) solid;
+}
+
+.pc-col2-2 h2 {
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+/* 2 columns on pc */
+@media screen and (min-width: 768px) {
+  .pc-col2-2 h2 {
+    width: 20%;
+  }
+
+  .pc-col2-2 .jobs,
+  .schools,
+  .skills,
+  .technical {
+    width: 80%;
+  }
+
+  .contents h3,
+  .contents h4 {
+    display: inline-block;
+  }
+
+  .contents h4 {
+    position: absolute;
+    right: 0;
+  }
+}
+
+/* experience, education contents */
+.contents {
+  margin-bottom: 20px;
+  padding: 0 0 10px;
+  border-bottom: 1px rgb(136, 133, 133) solid;
+  position: relative;
+  line-height: 2;
+}
+
+.contents:last-of-type {
+  border: none;
+}
+
+.contents ul {
+  list-style-type: disc;
+  padding: 20px 10px;
+  line-height: 2;
+}
+
+.contents h3 {
+  font-size: 1.2rem;
+}
+
+.contents h4 {
+  font-size: 1rem;
+}
+
+.contents h4 {
+  font-size: 1rem;
+}
+
+/* skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 20px;
+  line-height: 2;
+}
+
+.skills .skill {
+  width: 100%;
+  border-bottom: 1px rgb(136, 133, 133) solid;
+  padding-bottom: 10px;
+}
+
+.skills .skill:last-of-type {
+  border: none;
+}
+
+.skills h3 {
+  padding-top: 10px;
+}
+
+/* technical */
+.technical {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technical .talent {
+  margin-right: 20px;
+  padding: 0 0 20px;
+  line-height: 2;
+}
+
+.technical h3 {
+  border-bottom: 1px rgb(136, 133, 133) solid;
+}
